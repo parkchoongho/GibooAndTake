@@ -1,0 +1,135 @@
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+                            <!-- <i class="fas fa-user mr-1"></i> 아이콘 넣는 방법 강구하기 -->
+                            로그인
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
+                            <!-- <i class="fas fa-user-plus mr-1"></i> 아이콘 넣는 방법 강구하기-->
+                            회원가입
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1" id="login_result">
+                            <div class="md-form form-sm mb-5">
+                                <!-- <i class="fas fa-envelope prefix"></i> -->
+                                <input type="text" id="login_id" class="form-control form-control-sm validate"
+                                    placeholder="아이디">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10"></label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <!-- <i class="fas fa-lock prefix"></i> -->
+                                <input type="password" id="login_pw" class="form-control form-control-sm validate"
+                                    placeholder="비밀번호">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11"></label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info" id="login_btn">
+                                    로그인
+                                    <!-- <i class="fas fa-sign-in ml-1"></i> -->
+                                </button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>회원이 아니신가요? <a href="#" class="blue-text">회원가입</a></p>
+                                <p>비밀번호를 잊어버렸나요? <a href="#" class="blue-text">비밀번호 찾기</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal"
+                                id="login_close_btn">닫기</button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body" id="register_result">
+                            <div class="md-form form-sm mb-5">
+                                <!-- <i class="fas fa-envelope prefix"></i> -->
+                                <input type="text" id="register_name" class="form-control form-control-sm validate"
+                                    placeholder="이름">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11"></label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <!-- <i class="fas fa-envelope prefix"></i> -->
+                                <input type="text" id="register_id" class="form-control form-control-sm validate"
+                                    placeholder="아이디">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12"></label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <!-- <i class="fas fa-envelope prefix"></i> -->
+                                <input type="email" id="register_email" class="form-control form-control-sm validate"
+                                    placeholder="이메일">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12"></label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <!-- <i class="fas fa-envelope prefix"></i> -->
+                                <input type="tel" id="register_phone" class="form-control form-control-sm validate"
+                                    placeholder="전화번호">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12"></label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <!-- <i class="fas fa-lock prefix"></i> -->
+                                <input type="password" id="register_pw" class="form-control form-control-sm validate"
+                                    placeholder="비밀번호">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13"></label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <!-- <i class="fas fa-lock prefix"></i> -->
+                                <input type="password" id="register_pw_check"
+                                    class="form-control form-control-sm validate" placeholder="비밀번호 확인">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14"></label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info" id="register_btn">
+                                    가입하기
+                                    <!-- <i class="fas fa-sign-in ml-1"></i> -->
+                                </button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">이미 회원이신가요? <a href="#" class="blue-text">로그인</a>
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal"
+                                id="register_close_btn">닫기</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
+<!-- Login Modal End -->

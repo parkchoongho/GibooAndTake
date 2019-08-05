@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>비영리기관 정보 및 기부후기 조회</title>
+  <meta charset="utf-8">
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/my.js"></script>
+  <style>
+      .form-group{
+          text-align: left;
+      }
+    
+          
+      
+  </style>
+</head>
+<body style="background-color:white">  
+  <div class="container" style='margin:10px'>
+    <h2 style="background-color:#60bc0f;color:white; padding: 20px;text-align: center"> 비영리기관 정보 및 기부후기 조회</h2>
+    
+      <select id="searchType" style="background-color:white;color:black; padding: 10px;text-align: center;">
+        <option>조회타입</option>
+        <option value="0">국내기관</option>
+        <option value="1">해외결연기관</option>
+      </select>
+ 
+ 
+      <div class="form-group">        
+        <input id="donate_input" style= 'width:300px;' type="text" class="form-control"  placeholder="기관명을 입력하세요. 예) 초록어린이재단" name="car_num">     
+      <button id="donateInfoSearch_btn" class="btn btn-default" style="background-color:#fdbb00;color:black; font-size: 15px; ">조회</button>
+      </div>
+    
+    <br><br>
+    
+
+  
+    <br>
+    <div id="carBasicInfoSearch_div">
+        조회 예시<br>
+    <img src ="img/example.JPG" width="400" height="300">    
+    </div>
+  </div>
+  
+  </body>
+  </html>

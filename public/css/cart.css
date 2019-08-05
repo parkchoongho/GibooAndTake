@@ -1,0 +1,29 @@
+.box{
+  display: flex;
+}
+.box1{
+  margin : 20px;
+}
+.box2{
+  margin : 20px;
+} 
+.myicon {
+  margin: 20px;
+  background-color: rgb(250, 252, 232);
+  border-radius: 80%;
+}
+.myicon:hover {
+  margin: 20px;
+  background-color: #cbff9d;
+  border-radius: 80%;
+}
+h5 {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}

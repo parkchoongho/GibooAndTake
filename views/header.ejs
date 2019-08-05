@@ -1,0 +1,60 @@
+<header class="header_area">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a style=margin-top:70px class="navbar-brand logo_h" href="/"><img src="img/dorim2.png" width="200" height="150" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        <% if(loginState){ %>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">My GIBOO</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="#">나의 기부 내역</a>
+                                <li class="nav-item"><a class="nav-link" href="/item_insert_template">기부금 사용내역</a>
+
+                            </ul>
+                        </li>
+                        <% } %>
+                        <% if(loginState){ %>
+                        <li class="nav-item"><a class="nav-link" href="/cart">Cart</a>
+                        <% } %>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Information</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link"
+                                        onclick="window.open('/search_donateInfo_template','_blank','scrollbars=yes, resizable=yes, width=500, height=680')">기관
+                                        정보&후기</a>
+                            </ul>
+                        </li>
+                        <% if(loginState){ %>
+                        <li class="nav-item"><a class="nav-link" href="/item_insert_template">Item</a>
+                        <% } %>    
+
+
+
+                        <li class="nav-item">
+                            <% if(loginState){ %>
+                            <a class="nav-link" id="logout_btn">Logout</a>
+                            <% }else{ %>
+                            <a class="nav-link" data-toggle="modal" data-target="#modalLRForm">Login </a>
+                            <% } %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</header>

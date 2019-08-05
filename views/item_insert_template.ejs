@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<style>
+		
+	</style>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>
+		<% if(loginState){ %>
+		<%= email %> <% }else{ %>GIBOO&TAKE <%
+				} %>
+	</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<!-- <link rel="stylesheet" href="css/modal.css"> -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/my.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<!--================ Start Header Menu Area =================-->
+	<% include header %>
+	<!--================ End Header Menu Area =================-->
+	<!-- Login Button -->
+	<% include modal %>
+	
+	<!--================ Home Banner Area =================-->
+	<section class="home_banner_area2">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="banner_content">
+					<p class="upper_text"></p>
+					<h2>Product registration</h2>
+					<p>
+						상품등록
+					</p>
+					
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--================ End icon Area =================-->
+
+	<div class="main_title"> 
+	</div>
+
+	<div class="roberto-news-area section-padding-100-0">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-8">
+						<!-- Newsletter -->
+						<div class="single-widget-area mb-100">
+							<div class="newsletter-form">
+								<h3 style="background-color:#60bc0f;color:white; padding: 10px;text-align: center">상품 정보입력</h3>
+								<p>상품을 등록해주세요.</p>
+								상품이름<input type="text"  id="item_title" class="form-control"
+									placeholder="상품명을 입력해주세요">
+								상품내용<input type="text" id="item_contents" class="form-control"
+									placeholder="상품 상세 설명을 입력해주세요">
+								목표기부금액<input type="text"  id="item_price" class="form-control"
+									placeholder="목표 기부금액을 원 단위로 입력해 주세요">
+								재단코드<input type="text"  id="foundation_no" class="form-control"
+									placeholder="재단코드를 확인하고 입력해 주세요">
+									상품이미지
+								<form action="/upload", method="post", enctype="multipart/form-data">
+									<input type="file" name="uploadFile" class="form-control"
+									placeholder="이미지를 업로드 해주세요">
+									<button id="item_insert_btn" class="btn btn-default" style="background-color:#fdbb00;color:white; font-size: 20px; margin-left:720px  ">상품등록</button>
+								</form>
+							</div>
+						</div>
+	
+						<!-- Recent Post -->
+						<div class="single-widget-area mb-100" style="margin-top:100px">
+							<h3 style="background-color:#60bc0f;color:white; padding: 10px;text-align: center">등록된 상품</h3>
+							
+							<button id="search_item_btn" class="btn btn-default" style="background-color:#fdbb00;color:white; font-size: 20px; margin-left:720px  ">상품조회</button>
+	
+							<!-- Single Recent Post -->
+							<div id="item_list"></div>
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+							
+   	<!--================ End category section =================-->
+	   
+	<!--================ Start foundation section =================-->
+
+	<!--================ End CTA Area =================-->
+
+
+
+	<!--================ Start Story Area =================-->
+
+	<!--================ End Story Area =================-->
+	<% include footer %>
+	
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/countdown.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>

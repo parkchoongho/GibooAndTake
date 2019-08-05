@@ -1,0 +1,52 @@
+<section id="main_div" class="features_causes">
+  <div class="container">
+    <div class="main_title">
+      <h2>기부 몰</h2>
+      <p>후원자의 삶과 함께할 상품을 신중하게 선택하여 장바구니에 담아주세요</p>
+    </div>
+
+    <div class="row">
+      <% for (let i=0; i < results.length; i++) { %>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <figure>
+              <img
+                class="card-img-top img-fluid"
+                src="upload/<%= results[i].item_img %>"
+                alt="Card image cap"
+              />
+            </figure>
+            <div class="card_inner_body">
+              <h5 style="color:pink">인기</h5>
+              <h4 class="card-title">
+                <%= results[i].item_title %>
+              </h4>
+
+              <p class="card-text">
+                <%= results[i].item_contents %>
+              </p>
+              <br /><br />
+              <div class="d-flex justify-content-between raised_goal">
+                <p>현재모금액: 800만원</p>
+                <p><span><%= results[i].item_price %>원</span></p>
+              </div>
+              <div
+                class="d-flex justify-content-between donation align-items-center"
+              >
+                <a href="item_detail/<%= results[i].no%>" class="primary_btn"
+                  >기부</a
+                >
+                <p>
+                  <span class="lnr lnr-cart"></span> cart
+                  <span class="lnr lnr-heart"></span> 100 Donors
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</section>
