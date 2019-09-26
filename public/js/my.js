@@ -171,7 +171,7 @@ $(document).ready(function() {
     $.post("/search_item", function(data, status) {
       const parsedData = JSON.parse(data);
       console.log(parsedData);
-      let x;
+
       let result = "";
 
       parsedData.forEach(ele => {
